@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="min-h-screen bg-[#050816] text-white overflow-hidden">
+<body class="min-h-screen bg-[#050816] text-white">
 
     <!-- ================= BACKGROUND ================= -->
 
@@ -199,15 +199,14 @@
         <!-- ================================================= -->
 
         <main class="flex-1
-                     w-full
-                     px-3 py-3
-                     overflow-hidden">
+             w-full
+             px-3 py-3">
 
             @yield('content')
 
         </main>
 
-        <!-- ================================================= -->
+<!-- ================================================= -->
 <!-- FOOTER -->
 <!-- ================================================= -->
 
@@ -228,7 +227,7 @@
 
             🔴 Seluruh aktivitas lalu lintas penghuni dipantau secara realtime •
             Papan Kontrol P2U •
-            Lapas Kelas IIA Cikarang •
+            Lapas Kelas IIA Cikarang 🔴
 
         </div>
 
