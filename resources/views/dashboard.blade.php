@@ -291,28 +291,28 @@
             <div class="text-[#d4af37]
                         uppercase
                         tracking-[0.2em]
-                        text-[10px]
+                        text-[20px]
                         font-bold">
 
                 Detail Penghuni
 
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 Tahanan :
                 <span class="font-black text-white">
                     {{ $master->tahanan ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 Narapidana :
                 <span class="font-black text-white">
                     {{ $master->narapidana ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 WNA :
                 <span class="font-black text-white">
                     {{ $master->wna ?? 0 }}
@@ -323,6 +323,27 @@
                 Andikpas :
                 <span class="font-black text-white">
                     {{ $master->andikpas ?? 0 }}
+                </span>
+            </div>
+
+            <div class="text-xs text-white/80 text-[15px]">
+                Pria :
+                <span class="font-black text-white">
+                    {{ $master->pria ?? 0 }}
+                </span>
+            </div>
+
+            <div class="text-xs text-white/80 text-[15px]">
+                Wanita :
+                <span class="font-black text-white">
+                    {{ $master->wanita ?? 0 }}
+                </span>
+            </div>
+
+            <div class="text-xs text-white/80">
+                Lansia :
+                <span class="font-black text-white">
+                    {{ $master->lansia ?? 0 }}
                 </span>
             </div>
 
@@ -414,7 +435,7 @@
                     </div>
 
                     <!-- BODY -->
-                    <div class="h-65 overflow-hidden">
+                    <div class="h-46 overflow-hidden">
 
                         @forelse($laluLintas as $item)
 
@@ -698,4 +719,3 @@ setInterval(() => {
 
 </script>
 
-@endsection
