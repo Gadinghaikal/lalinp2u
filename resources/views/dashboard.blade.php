@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="w-full h-full
+<div class="w-full
+            min-h-screen
             px-2 md:px-3
-            space-y-3
-            overflow-hidden">
+            space-y-3">
 
     <!-- ===================================================== -->
     <!-- HEADER -->
