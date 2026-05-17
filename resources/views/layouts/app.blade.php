@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
     <meta charset="UTF-8">
@@ -15,78 +16,100 @@
 
 </head>
 
-<body class="min-h-screen bg-[#050816] text-white overflow-x-hidden">
+<body class="min-h-screen bg-[#050816] text-white overflow-hidden">
 
-    <!-- ================= BACKGROUND EFFECT ================= -->
+    <!-- ================= BACKGROUND ================= -->
 
     <div class="fixed inset-0 -z-10 overflow-hidden">
 
-        <!-- Gradient Glow Top -->
-        <div class="absolute -top-50 -left-25 w-125 h-125 bg-[#d4af37]/10 rounded-full blur-3xl">
+        <!-- Glow -->
+        <div class="absolute -top-40 -left-20
+                    w-96 h-96
+                    bg-[#d4af37]/10
+                    rounded-full blur-3xl">
         </div>
 
-        <!-- Gradient Glow Right -->
-        <div class="absolute top-25 -right-25 w-100 h-100 bg-blue-500/10 rounded-full blur-3xl">
+        <div class="absolute top-20 -right-20
+                    w-80 h-80
+                    bg-blue-500/10
+                    rounded-full blur-3xl">
         </div>
 
-        <!-- Gradient Glow Bottom -->
-        <div class="absolute -bottom-50 left-[30%] w-125 h-125 bg-[#d4af37]/5 rounded-full blur-3xl">
-        </div>
-
-        <!-- Grid Overlay -->
+        <!-- Grid -->
         <div class="absolute inset-0 opacity-[0.03]"
              style="
                 background-image:
                 linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
-                background-size: 40px 40px;
+                background-size: 32px 32px;
              ">
         </div>
 
     </div>
 
-
-    <!-- ================= MAIN LAYOUT ================= -->
+    <!-- ================= MAIN ================= -->
 
     <div class="min-h-screen flex flex-col">
 
-        <!-- ================= HEADER ================= -->
+        <!-- ================================================= -->
+        <!-- HEADER -->
+        <!-- ================================================= -->
 
-        <header class="sticky top-0 z-50 border-b border-white/10 backdrop-blur-xl bg-[#050816]/80">
+        <header class="sticky top-0 z-50
+                       border-b border-white/10
+                       bg-[#050816]/80
+                       backdrop-blur-xl">
 
-            <div class="max-w-450 mx-auto px-6 py-4">
+            <div class="w-full px-4 py-3">
 
-                <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-5">
+                <div class="flex items-center justify-between gap-4">
 
                     <!-- LEFT -->
-                    <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-3">
 
-                        <!-- Logo Kemenimipas -->
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-lg shadow-lg">
+                        <!-- LOGO 1 -->
+                        <div class="w-12 h-12
+                                    rounded-xl
+                                    bg-white/5
+                                    border border-white/10
+                                    flex items-center justify-center">
 
                             <img src="{{ asset('images/imipas.png') }}"
-                                 class="w-12 h-12 object-contain">
+                                 class="w-8 h-8 object-contain">
 
                         </div>
 
-                        <!-- Logo Lapas -->
-                        <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-lg shadow-lg">
+                        <!-- LOGO 2 -->
+                        <div class="w-12 h-12
+                                    rounded-xl
+                                    bg-white/5
+                                    border border-white/10
+                                    flex items-center justify-center">
 
                             <img src="{{ asset('images/pemasyarakatan.png') }}"
-                                 class="w-12 h-12 object-contain">
+                                 class="w-8 h-8 object-contain">
 
                         </div>
 
-                        <!-- Title -->
+                        <!-- TITLE -->
                         <div>
 
-                            <h1 class="text-3xl xl:text-4xl font-black tracking-wide text-white">
+                            <h1 class="text-xl md:text-2xl
+                                       font-black
+                                       tracking-wide
+                                       text-white
+                                       leading-tight">
 
                                 PAPAN KONTROL
 
                             </h1>
 
-                            <p class="text-[#d4af37] tracking-[0.3em] uppercase text-sm font-semibold mt-1">
+                            <p class="text-[#d4af37]
+                                      tracking-[0.25em]
+                                      uppercase
+                                      text-[10px]
+                                      font-semibold
+                                      mt-1">
 
                                 LALU LINTAS PENGHUNI
 
@@ -96,47 +119,69 @@
 
                     </div>
 
-
                     <!-- RIGHT -->
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                    <div class="flex items-center gap-3">
 
-                        <!-- Live Status -->
-                        <div class="flex items-center gap-3 px-5 py-3 rounded-2xl border border-green-500/20 bg-green-500/10 backdrop-blur-lg">
+                        <!-- STATUS -->
+                        <div class="flex items-center gap-2
+                                    px-3 py-2
+                                    rounded-xl
+                                    border border-green-500/20
+                                    bg-green-500/10">
 
                             <div class="relative">
 
-                                <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse">
-                                </div>
-
-                                <div class="absolute inset-0 w-3 h-3 rounded-full bg-green-400 animate-ping">
+                                <div class="w-2 h-2
+                                            rounded-full
+                                            bg-green-400 animate-pulse">
                                 </div>
 
                             </div>
 
                             <div>
 
-                                <div class="text-xs text-green-300 uppercase tracking-widest">
+                                <div class="text-[9px]
+                                            text-green-300
+                                            uppercase
+                                            tracking-widest">
+
                                     Status
+
                                 </div>
 
-                                <div class="font-bold text-green-400">
-                                    LIVE MONITORING
+                                <div class="text-xs
+                                            font-bold
+                                            text-green-400">
+
+                                    LIVE
+
                                 </div>
 
                             </div>
 
                         </div>
 
+                        <!-- CLOCK -->
+                        <div class="px-4 py-2
+                                    rounded-xl
+                                    bg-white/5
+                                    border border-white/10">
 
-                        <!-- Clock -->
-                        <div class="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg shadow-lg">
+                            <div class="text-[9px]
+                                        uppercase
+                                        tracking-[0.2em]
+                                        text-gray-400">
 
-                            <div class="text-xs uppercase tracking-[0.3em] text-gray-400 mb-1">
-                                Waktu Sekarang
+                                Waktu
+
                             </div>
 
                             <div id="clock"
-                                 class="text-3xl font-black tracking-widest text-[#d4af37]">
+                                 class="text-xl
+                                        font-black
+                                        tracking-widest
+                                        text-[#d4af37]">
+
                             </div>
 
                         </div>
@@ -149,25 +194,37 @@
 
         </header>
 
+        <!-- ================================================= -->
+        <!-- CONTENT -->
+        <!-- ================================================= -->
 
-        <!-- ================= MAIN CONTENT ================= -->
-
-        <main class="flex-1 max-w-450 w-full mx-auto px-6 py-8">
+        <main class="flex-1
+                     w-full
+                     px-3 py-3
+                     overflow-hidden">
 
             @yield('content')
 
         </main>
 
+        <!-- ================================================= -->
+        <!-- FOOTER -->
+        <!-- ================================================= -->
 
-        <!-- ================= FOOTER RUNNING TEXT ================= -->
+        <footer class="border-t border-white/10
+                       bg-[#050816]/90
+                       overflow-hidden">
 
-        <footer class="border-t border-white/10 bg-[#050816]/90 backdrop-blur-xl overflow-hidden">
+            <div class="relative h-8 flex items-center">
 
-            <div class="relative h-12 flex items-center">
+                <div class="absolute whitespace-nowrap
+                            animate-marquee
+                            text-[10px]
+                            font-medium
+                            text-[#d4af37]">
 
-                <div class="absolute whitespace-nowrap animate-marquee text-sm font-medium text-[#d4af37]">
                     Seluruh aktivitas lalu lintas penghuni dipantau realtime •
-                    Lapas Kelas IIA Cikarang •
+                    Lapas Kelas IIA CIKARANG •
 
                 </div>
 
@@ -177,12 +234,12 @@
 
     </div>
 
-
-    <!-- ================= SCRIPT ================= -->
+    <!-- ================================================= -->
+    <!-- CLOCK -->
+    <!-- ================================================= -->
 
     <script>
 
-        // REALTIME CLOCK
         function updateClock() {
 
             const now = new Date();
@@ -198,8 +255,9 @@
 
     </script>
 
-
-    <!-- ================= STYLE ================= -->
+    <!-- ================================================= -->
+    <!-- MARQUEE -->
+    <!-- ================================================= -->
 
     <style>
 
@@ -212,14 +270,16 @@
             100% {
                 transform: translateX(-100%);
             }
+
         }
 
         .animate-marquee {
 
-            animation: marquee 30s linear infinite;
+            animation: marquee 25s linear infinite;
         }
 
     </style>
 
 </body>
+
 </html>
