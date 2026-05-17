@@ -208,29 +208,34 @@
         </main>
 
         <!-- ================================================= -->
-        <!-- FOOTER -->
-        <!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
 
-        <footer class="border-t border-white/10
-                       bg-[#050816]/90
-                       overflow-hidden">
+<footer class="border-t border-white/10
+               bg-[#050816]/95
+               overflow-hidden">
 
-            <div class="relative h-8 flex items-center">
+    <div class="relative h-8 overflow-hidden">
 
-                <div class="absolute whitespace-nowrap
-                            animate-marquee
-                            text-[10px]
-                            font-medium
-                            text-[#d4af37]">
+        <div class="absolute top-1/2
+                    -translate-y-1/2
+                    whitespace-nowrap
+                    animate-marquee
+                    text-[10px]
+                    font-semibold
+                    tracking-wide
+                    text-[#d4af37]">
 
-                    Seluruh aktivitas lalu lintas penghuni dipantau realtime •
-                    Lapas Kelas IIA CIKARANG •
+            🔴 Seluruh aktivitas lalu lintas penghuni dipantau secara realtime •
+            Papan Kontrol P2U •
+            Lapas Kelas IIA Cikarang •
 
-                </div>
+        </div>
 
-            </div>
+    </div>
 
-        </footer>
+</footer>
+
 
     </div>
 
@@ -255,30 +260,31 @@
 
     </script>
 
-    <!-- ================================================= -->
-    <!-- MARQUEE -->
-    <!-- ================================================= -->
+   <!-- ================================================= -->
+<!-- MARQUEE STYLE -->
+<!-- ================================================= -->
 
-    <style>
+<style>
 
-        @keyframes marquee {
+@keyframes marquee {
 
-            0% {
-                transform: translateX(100%);
-            }
+    0% {
+        transform: translate(100vw, -50%);
+    }
 
-            100% {
-                transform: translateX(-100%);
-            }
+    100% {
+        transform: translate(-100%, -50%);
+    }
 
-        }
+}
 
-        .animate-marquee {
+.animate-marquee {
 
-            animation: marquee 25s linear infinite;
-        }
+    animation: marquee 28s linear infinite;
 
-    </style>
+}
+
+</style>
 
 </body>
 

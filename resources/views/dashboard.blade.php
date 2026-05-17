@@ -435,8 +435,11 @@
                     </div>
 
                     <!-- BODY -->
-                    <div class="h-46 overflow-hidden">
+                    <div id="scroll-container"
+                    class="h-46 overflow-hidden relative">
 
+                        <div id="data-list">
+                            
                         @forelse($laluLintas as $item)
 
                         <div class="grid grid-cols-6
@@ -487,6 +490,8 @@
                         <div class="py-16 text-center text-white/40 text-sm">
 
                             Belum ada aktivitas
+
+                        </div>
 
                         </div>
 
