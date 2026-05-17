@@ -319,7 +319,7 @@
                 </span>
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 Andikpas :
                 <span class="font-black text-white">
                     {{ $master->andikpas ?? 0 }}
@@ -340,14 +340,14 @@
                 </span>
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 Lansia :
                 <span class="font-black text-white">
                     {{ $master->lansia ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80">
+            <div class="text-xs text-white/80 text-[15px]">
                 Pengunjung :
                 <span class="font-black text-white">
                     {{ $harian->pengunjung ?? 0 }}
