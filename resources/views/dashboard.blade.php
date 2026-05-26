@@ -29,7 +29,10 @@
 
         <div class="relative z-10 px-4 py-3">
 
-            <div class="flex items-center justify-between gap-4">
+            <div class="flex flex-col lg:flex-row
+                        lg:items-center
+                        lg:justify-between
+                        gap-4">
 
                 <!-- LEFT -->
                 <div class="flex items-center gap-3">
@@ -63,42 +66,44 @@
                 </div>
 
                 <!-- RIGHT -->
-                <div class="flex items-center gap-2">
+                <div class="flex flex-wrap
+                            w-full lg:w-auto
+                            gap-2">
 
                     <a href="{{ route('input.penghuni') }}"
-                       class="px-3 py-2
-                              rounded-xl
-                              bg-white
-                              text-[#07044f]
-                              text-sm
-                              font-bold">
-
-                        📊 Statistik
-
+                       class="flex-1 lg:flex-none
+                                px-3 py-2
+                                rounded-xl
+                                bg-white
+                                text-[#07044f]
+                                text-xs md:text-sm
+                                font-bold
+                                text-center">
+                            📊 Statistik
                     </a>
 
                     <a href="{{ route('input.petugas') }}"
-                       class="px-3 py-2
-                              rounded-xl
-                              bg-white/5
-                              border border-white/10
-                              text-white
-                              text-sm">
-
+                    class="flex-1 lg:flex-none
+                            px-3 py-2
+                            rounded-xl
+                            bg-white/5
+                            border border-white/10
+                            text-white
+                            text-xs md:text-sm
+                            text-center">
                         👮 Petugas
-
                     </a>
 
-                    <a href="{{ route('input.lalu_lintas') }}"
-                       class="px-4 py-2
-                              rounded-xl
-                              bg-[#d4af37]
-                              text-[#07044f]
-                              text-sm
-                              font-black">
-
+                   <a href="{{ route('input.lalu_lintas') }}"
+                    class="flex-1 lg:flex-none
+                            px-4 py-2
+                            rounded-xl
+                            bg-[#d4af37]
+                            text-[#07044f]
+                            text-xs md:text-sm
+                            font-black
+                            text-center">
                         ➕ Aktivitas
-
                     </a>
 
                 </div>
