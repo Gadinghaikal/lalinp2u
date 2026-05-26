@@ -2,10 +2,11 @@
 
 @section('content')
 
-<div class="w-full
+<div class="max-w-7xl mx-auto
             min-h-screen
-            px-2 md:px-3
-            space-y-3">
+            px-4 md:px-6 lg:px-8
+            py-4
+            space-y-5">
 
     <!-- ===================================================== -->
     <!-- HEADER -->
@@ -20,7 +21,7 @@
                 border border-white/10
                 shadow-2xl">
 
-        <div class="absolute -top-20 right-0
+        <div class="absolute -top-20 right-0    
                     w-72 h-72
                     bg-[#d4af37]/10
                     rounded-full blur-3xl">
@@ -34,11 +35,11 @@
                 <div class="flex items-center gap-3">
 
                     <img src="{{ asset('images/logo1.png') }}"
-                         class="w-12 h-12 object-contain">
+                        class="w-16 h-16 object-contain">
 
                     <div>
 
-                        <h1 class="text-xl md:text-2xl
+                        <h1 class="text-2xl md:text-3xl lg:text-4xl
                                    font-black tracking-wide
                                    text-white leading-tight">
 
@@ -69,7 +70,7 @@
                               rounded-xl
                               bg-white
                               text-[#07044f]
-                              text-xs
+                              text-sm
                               font-bold">
 
                         📊 Statistik
@@ -82,7 +83,7 @@
                               bg-white/5
                               border border-white/10
                               text-white
-                              text-xs">
+                              text-sm">
 
                         👮 Petugas
 
@@ -93,7 +94,7 @@
                               rounded-xl
                               bg-[#d4af37]
                               text-[#07044f]
-                              text-xs
+                              text-sm
                               font-black">
 
                         ➕ Aktivitas
@@ -136,7 +137,7 @@
                     </div>
 
                     <div class="mt-1
-                                text-2xl
+                                text-4xl
                                 font-black
                                 text-white">
 
@@ -176,7 +177,7 @@
                     </div>
 
                     <div class="mt-1
-                                text-2xl
+                                text-4xl
                                 font-black
                                 text-white">
 
@@ -216,7 +217,7 @@
                     </div>
 
                     <div class="mt-1
-                                text-2xl
+                                text-4xl
                                 font-black
                                 text-green-400">
 
@@ -256,7 +257,7 @@
                     </div>
 
                     <div class="mt-1
-                                text-2xl
+                                text-4xl
                                 font-black
                                 text-red-400">
 
@@ -291,63 +292,63 @@
             <div class="text-[#d4af37]
                         uppercase
                         tracking-[0.2em]
-                        text-[20px]
+                        text-lg
                         font-bold">
 
                 Detail Penghuni
 
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Tahanan :
                 <span class="font-black text-white">
                     {{ $master->tahanan ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Narapidana :
                 <span class="font-black text-white">
                     {{ $master->narapidana ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 WNA :
                 <span class="font-black text-white">
                     {{ $master->wna ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Andikpas :
                 <span class="font-black text-white">
                     {{ $master->andikpas ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Pria :
                 <span class="font-black text-white">
                     {{ $master->pria ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Wanita :
                 <span class="font-black text-white">
                     {{ $master->wanita ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Lansia :
                 <span class="font-black text-white">
                     {{ $master->lansia ?? 0 }}
                 </span>
             </div>
 
-            <div class="text-xs text-white/80 text-[15px]">
+            <div class="text-sm text-white/80">
                 Pengunjung :
                 <span class="font-black text-white">
                     {{ $harian->pengunjung ?? 0 }}
