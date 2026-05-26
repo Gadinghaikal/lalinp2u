@@ -62,10 +62,16 @@
 
             <div class="w-full px-4 py-3">
 
-                <div class="flex items-center justify-between gap-4">
+                <div class="flex flex-col md:flex-row
+                            md:items-center
+                            md:justify-between
+                            gap-3">
 
                     <!-- LEFT -->
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center
+                                justify-center md:justify-start
+                                gap-3
+                                w-full md:w-auto">
 
                         <!-- LOGO 1 -->
                         <div class="w-12 h-12
@@ -94,7 +100,7 @@
                         <!-- TITLE -->
                         <div>
 
-                            <h1 class="text-xl md:text-2xl
+                            <h1 class="text-lg sm:text-xl md:text-2xl
                                        font-black
                                        tracking-wide
                                        text-white
@@ -105,6 +111,7 @@
                             </h1>
 
                             <p class="text-[#d4af37]
+                                      text-center md:text-left
                                       tracking-[0.25em]
                                       uppercase
                                       text-[10px]
@@ -120,7 +127,11 @@
                     </div>
 
                     <!-- RIGHT -->
-                    <div class="flex items-center gap-3">
+                    <div class="flex
+                                justify-center md:justify-end
+                                items-center
+                                gap-2
+                                w-full md:w-auto">
 
                         <!-- STATUS -->
                         <div class="flex items-center gap-2
@@ -177,7 +188,7 @@
                             </div>
 
                             <div id="clock"
-                                 class="text-xl
+                                 class="text-base sm:text-lg md:text-xl
                                         font-black
                                         tracking-widest
                                         text-[#d4af37]">
@@ -200,7 +211,10 @@
 
         <main class="flex-1
              w-full
-             px-3 py-3">
+             max-w-screen-2xl
+             mx-auto
+             px-2 sm:px-3 md:px-4
+             py-3">
 
             @yield('content')
 
